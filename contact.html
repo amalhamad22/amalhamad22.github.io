@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Amr Alhamad (SID: 162207)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Amr Alhamad</a>
+            <div>
+                <a class="text-white me-3" href="index.html">Home</a>
+                <a class="text-white" href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Contact Me</h1>
+        <p class="text-center text-muted mb-4">I'd love to hear from you! Send me a message and I'll respond as soon as possible.</p>
+
+        <div class="card">
+            <div class="card-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
+                        <div class="invalid-feedback" id="nameError"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback" id="emailError"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="country" name="country" required>
+                        <div class="invalid-feedback" id="countryError"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments" rows="5" required></textarea>
+                        <div class="invalid-feedback" id="commentsError"></div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg me-2">Send Message</button>
+                        <button type="reset" class="btn btn-outline-secondary btn-lg">Reset Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="card mt-4">
+            <div class="card-body text-center">
+                <h5>Alternative Contact Methods</h5>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:amalhamad22@cit.just.edu.jo">amalhamad22@cit.just.edu.jo</a><br>
+                    <strong>Student ID:</strong> 162207<br>
+                    <strong>Major:</strong> Cybersecurity - Fourth Year
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>&copy; 2024 Amr Alhamad (SID: 162207). All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
